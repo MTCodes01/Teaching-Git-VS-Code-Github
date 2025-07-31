@@ -1,18 +1,25 @@
-lst = [1, 2, 3, 4, 5]
+# print("Hi", "there!")
+# print("Hi", "there!", sep=", ")
+# print("Hi", "there!", end=".")
+# print("Hi", "there!", sep=", ", end=".")
+# print("Hi", "there!", file=open("output.txt", "w"))
 
-for i in lst:
-    print(i)
+# def func1(a: int, b: int) -> int:
+#     """Returns the sum of two integers."""
+#     return a + b
 
-x = lst[0]  # Accessing the first element
-print(x)  # Output: 1
+# func1 = lambda a, b: a+b
+# print(func1(1, 2))
+# print(func1(12, 45))
 
-a = 0
-while a < len(lst):
-    x = lst[a]  # Accessing the current element
-    print(x)  # Output: 1
-    a += 1
+lst1 = [1, 2, 3, 4, 5]
+# for i in range(0, 10):
+#     lst1.append(i)
 
-dict1 = {"a": 1, "b": 2, "c": 3}
-for key, value in dict1.items():
-    print(key, value)
+# lst2 = [i for i in range(0, 10)]
 
+dict1 = {i:j for i,j in enumerate(lst1, start=5)}
+
+# print(list(enumerate(lst1, start=5)))
+# print(f"List 1: {lst1}\nList 2: {lst2}")
+print(dict1)
